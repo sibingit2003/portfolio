@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIBIN K S - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <h1>SIBIN K S</h1>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="brand">
+            <img src="src/assets/sibin.jpg" alt="Profile" class="nav-photo">
+            <h1>SIBIN K S</h1>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <a href="#certificates">Certificates</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Switch to light mode">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="hamburger-menu" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Backdrop -->
+    <div id="mobile-nav-backdrop" class="mobile-nav-backdrop"></div>
+
+    <!-- Mobile Navigation Modal -->
+    <div id="mobile-nav" class="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">×</button>
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#certificates" class="mobile-nav-link">Certificates</a>
+        <button id="mobile-theme-toggle" class="mobile-theme-toggle">
+            <i class="fas fa-sun"></i> Dark Mode
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section section-fade-in">
+        <div class="hero-left">
+            <p class="intro">Hi I am</p>
+            <h1 class="name">Sibin K S</h1>
+            <h2 class="role" id="typewriter">
+                <span id="typewriter-text"></span>
+                <span class="typewriter-cursor">|</span>
+            </h2>
+            <p class="hero-description">
+                Passionate about creating innovative digital solutions and turning ideas into reality through code.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn hire-me">Hire Me</a>
+                <a href="src/assets/SIBIN.pdf" class="btn download-cv" download>Download CV</a>
+            </div>
+        </div>
+        <img src="src/assets/sibin.jpg" alt="Sibin" class="hero-image">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="card section-fade-in">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="src/assets/sibin.jpg" alt="Sibin KS" class="about-photo">
+            <p>
+                I'm <strong>Sibin K S</strong>, a dedicated and enthusiastic Computer Science graduate with
+                a strong interest in full-stack web development. I have developed several personal and academic
+                projects that reflect my understanding of both frontend and backend technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card section-fade-in">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="HTML" data-level="95%">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+                <div class="tooltip">Standard markup language for creating structured web content.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="CSS" data-level="92%">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+                <div class="tooltip">Used to style HTML elements and control visual layout.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="JavaScript" data-level="75%">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+                <div class="tooltip">Adds interactivity and dynamic behavior to web pages.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="React" data-level="40%">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+                <div class="tooltip">JavaScript library for building user interfaces and single-page applications.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="Python" data-level="80%">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+                <div class="tooltip">General-purpose programming language known for simplicity and versatility.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="Flutter" data-level="65%">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Flutter</p>
+                <div class="tooltip">Framework for building cross-platform mobile apps.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="Java" data-level="50%">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+                <div class="tooltip">Popular object-oriented language used in enterprise applications.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="C" data-level="75%">
+                <i class="fas fa-code"></i>
+                <p>C</p>
+                <div class="tooltip">Powerful language used in system programming and embedded systems.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="SQL" data-level="75%">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+                <div class="tooltip">Structured Query Language for managing relational databases.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="PHP" data-level="60%">
+                <i class="fab fa-php"></i>
+                <p>PHP</p>
+                <div class="tooltip">Server-side scripting language mainly used for web development.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-skill="Shell" data-level="60%">
+                <i class="fas fa-terminal"></i>
+                <p>Shell</p>
+                <div class="tooltip">Used for command-line scripting and automation in Unix/Linux.</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-inner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="card section-fade-in">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Academic Project: AQUAFLOW</h3>
+                        <p class="company">Final Year Project</p>
+                    </div>
+                    <span class="period">2024</span>
+                </div>
+                <p class="experience-description">
+                    Developed a comprehensive water supply management system (AQUAFLOW) as part of my final year project. Implemented both web and mobile interfaces using modern technologies.
+                </p>
+                <div class="experience-skills">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">UI/UX</span>
+                    <span class="skill-tag">Teamwork</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card section-fade-in">
+        <h2>Projects</h2>
+        <div class="skills-grid">
+            <div class="skill-item project-item" data-project="portfolio">
+                <i class="fas fa-globe"></i>
+                <p>
+                    <strong>Portfolio Website</strong><br />
+                    Responsive site using HTML, CSS, JS
+                </p>
+                <div class="POP">
+                    A personal portfolio website to showcase my skills, projects, and contact information. Built with modern web technologies and fully responsive design.
+                </div>
+            </div>
+            <div class="skill-item project-item" data-project="aquaflow">
+                <i class="fab fa-android"></i>
+                <p>
+                    <strong>AQUAFLOW App & Website</strong><br />
+                    Water Supply Management System for Panchayath
+                </p>
+                <div class="POP">
+                    AQUAFLOW is a comprehensive water supply management system developed as my final year academic project. It features a detailed time schedule for water supply, online application for new connections, and a complaint management system. Built with Flutter and React, it provides both web and mobile interfaces for residents and administrators.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="card section-fade-in">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <a href="https://g.co/kgs/opCGXPj" class="education-card" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-school"></i>
+                <div class="education-info">
+                    <p>
+                        <strong>HSS | Science</strong><br /><br />
+                        Govt HSS Puduppadi
+                    </p>
+                </div>
+            </a>
+            <a href="https://www.lissah.com/" class="education-card" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-university"></i>
+                <div class="education-info">
+                    <p>
+                        <strong>Bachelor of Computer Science</strong><br /><br />
+                        LISSAH College Kaithapoyil
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card section-fade-in">
+        <h2>Contact Me</h2>
+        <div class="contact-section-grid">
+            <div>
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:sibinks46@gmail.com" target="_blank" rel="noopener noreferrer">sibinks46@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+918590637451">8590637451</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://instagram.com/_sibin_k_s_" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://facebook.com/sibin26" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/918590637451" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/sibin-k-s" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificates" class="card section-fade-in">
+        <h2>Certificates</h2>
+        <p class="certificate-intro">
+            Professional certifications that validate my expertise in cybersecurity and artificial intelligence, demonstrating my commitment to continuous learning and skill development.
+        </p>
+        
+        <div class="certificate-container">
+            <div class="certificate-item" data-cert="ccsa">
+                <div class="certificate-image-container">
+                    <img src="src/assets/ccsa.jpg" alt="CCSA Certificate" class="certificate-pdf" data-cert="ccsa">
+                    <div class="certificate-badge">
+                        <i class="fas fa-certificate"></i>
+                        Certified
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item" data-cert="ai">
+                <div class="certificate-image-container">
+                    <img src="src/assets/AI.jpg" alt="AI Training Certificate" class="certificate-pdf" data-cert="ai">
+                    <div class="certificate-badge">
+                        <i class="fas fa-certificate"></i>
+                        Certified
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modals -->
+    <div id="certificate-modal-ccsa" class="certificate-modal">
+        <div class="modal-content">
+            <span class="close-modal" data-cert="ccsa">&times;</span>
+            <img src="src/assets/ccsa.jpg" alt="CCSA Certificate Full" class="modal-certificate-img">
+            <div class="modal-certificate-details">
+                <h3>CCSA Certificate</h3>
+                <p>
+                    <strong>Certified Cyber Security Analyst (CCSA)</strong><br />
+                    <span class="issuer">Issued by: RedTeam Hacker Academy</span><br />
+                    <span class="date">Date: March 1, 2023</span>
+                </p>
+                <p class="certificate-description">
+                    This certification demonstrates comprehensive knowledge in cybersecurity principles, ethical hacking methodologies, and defensive security practices. It validates understanding of network security, threat analysis, and incident response protocols essential for protecting digital infrastructure.
+                </p>
+                <p>
+                    Successfully completed the CCSA program, demonstrating practical skills in identifying threats, assessing vulnerabilities, implementing security controls, analyzing logs, and responding to incidents. This certification covers IT Infrastructure Technologies, Open Source Intelligence (OSINT), Web Application Penetration Testing, Vulnerability Assessment, Network Security, Security Operations Center (SOC), and Security Information and Event Management (SIEM). The program is designed for individuals seeking to enter or advance their careers in cybersecurity, particularly in roles related to security analysis, operations, and vulnerability management.
+                </p>
+                <div class="certificate-additional-info">
+                    <p>
+                        <strong>Target Audience:</strong><br />
+                        <span>Individuals seeking to enter or advance their careers in the cybersecurity field, particularly those interested in roles related to security analysis, operations, and vulnerability management.</span>
+                    </p>
+                    <p>
+                        <strong>Focus Areas:</strong><br />
+                        <span>• IT Infrastructure Technologies<br>
+                        • Open Source Intelligence (OSINT)<br>
+                        • Web Application Penetration Testing<br>
+                        • Vulnerability Assessment<br>
+                        • Network Security<br>
+                        • Security Operations Center (SOC)<br>
+                        • Security Information and Event Management (SIEM)</span>
+                    </p>
+                    <p>
+                        <strong>Career Paths:</strong><br />
+                        <span>• Cybersecurity Analyst<br>
+                        • SOC Analyst<br>
+                        • Vulnerability Analyst<br>
+                        • Network Security Analyst<br>
+                        • Junior Penetration Tester</span>
+                    </p>
+                </div>
+                <div class="certificate-skills">
+                    <span class="skills-title">Skills Validated:</span>
+                    <div class="skills-grid-modal">
+                        <span>• IT Infrastructure Technologies</span>
+                        <span>• OSINT</span>
+                        <span>• Web Application Penetration Testing</span>
+                        <span>• Vulnerability Assessment</span>
+                        <span>• Network Security</span>
+                        <span>• SOC Operations</span>
+                        <span>• SIEM Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certificate-modal-ai" class="certificate-modal">
+        <div class="modal-content">
+            <span class="close-modal" data-cert="ai">&times;</span>
+            <img src="src/assets/AI.jpg" alt="AI Training Certificate Full" class="modal-certificate-img">
+            <div class="modal-certificate-details">
+                <h3>AI Training Certificate</h3>
+                <p>
+                    <strong>Beginners Training Program in Artificial Intelligence</strong><br />
+                    <span class="issuer">Issued by: UL Research and Open Source Pharma Foundation (OSPF)</span><br />
+                    <span class="date">Date: August 1, 2025</span>
+                </p>
+                <p class="certificate-description">
+                    This certificate confirms successful completion of the Beginners Training Program in Artificial Intelligence, jointly conducted by UL Research and Open Source Pharma Foundation (OSPF) for Little Flower Institute of Social Sciences and Health (LISSAH).
+                </p>
+                <p>
+                    Successfully completed a comprehensive 30-hour training program in Artificial Intelligence fundamentals, covering essential AI concepts, machine learning principles, and practical applications. The program was conducted for LISSAH College located at Kaithapoyil P.O, Kozhikode - 673586 during the academic year 2024-2025.
+                </p>
+                <div class="certificate-additional-info">
+                    <p>
+                        <strong>Academic Year:</strong> 2024-2025<br />
+                        <strong>Duration:</strong> 30 hours<br />
+                        <strong>Institution:</strong> Little Flower Institute of Social Sciences and Health (LISSAH)<br />
+                        <strong>Location:</strong> Kaithapoyil P.O, Kozhikode - 673586
+                    </p>
+                    <p>
+                        <strong>Signatories:</strong><br />
+                        <span>• Sandesh E PA (Director, UL Research)<br>
+                        • Jayakumar Menon (Chairman, Open Source Pharma Foundation)<br>
+                        • Dr. Benny Joseph (Principal, LISSAH College)</span>
+                    </p>
+                </div>
+                <div class="certificate-skills">
+                    <span class="skills-title">Skills Validated:</span>
+                    <div class="skills-grid-modal">
+                        <span>• Artificial Intelligence</span>
+                        <span>• Machine Learning</span>
+                        <span>• AI Fundamentals</span>
+                        <span>• Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-socials">
+            <a href="https://instagram.com/_sibin_k_s_" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/sibin26" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/918590637451" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://linkedin.com/in/sibin-k-s" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 SIBIN K S. All rights reserved.</p>
+        
+        <!-- Back to Top Button -->
+        <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+            <span class="back-to-top-text">Top</span>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
